@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
+import { getPhotoUrl } from './photosData';
 
 export default function Slide3Bond({ onNext, onPrev }) {
   return (
@@ -12,7 +13,7 @@ export default function Slide3Bond({ onNext, onPrev }) {
           {/* Main Hero Photograph (2J2A8069.jpg - Brother & Sister together) */}
           <div className="relative w-[78%] sm:w-[72%] mx-auto rounded-2xl md:rounded-3xl overflow-hidden shadow-warm-lg border border-warm-sand/60 bg-warm-cream/50 aspect-[3/4] z-10 group transform -rotate-1 hover:rotate-0 transition-all duration-500">
             <img
-              src="/photos/2J2A8069.jpg"
+              src={getPhotoUrl('2J2A8069.jpg')}
               alt="Anna and sister together"
               className="w-full h-full object-cover object-top transition-transform duration-1000 group-hover:scale-105"
             />
@@ -25,7 +26,7 @@ export default function Slide3Bond({ onNext, onPrev }) {
           {/* Overlapping Image 1 (2J2A7222.jpg - warm laughing family moment) */}
           <div className="absolute -bottom-2 -left-2 sm:-left-4 w-[48%] sm:w-[46%] aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden shadow-warm-md border-2 border-warm-ivory bg-warm-sand/40 z-20 transform -rotate-3 hover:rotate-0 transition-all duration-500 group">
             <img
-              src="/photos/2J2A7222.jpg"
+              src={getPhotoUrl('2J2A7222.jpg')}
               alt="Family laughing together"
               className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
             />
@@ -34,7 +35,7 @@ export default function Slide3Bond({ onNext, onPrev }) {
           {/* Overlapping Image 2 (2J2A8072.jpg - ceremonial family portrait) */}
           <div className="absolute -bottom-4 -right-2 sm:-right-4 w-[48%] sm:w-[46%] aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden shadow-warm-md border-2 border-warm-ivory bg-warm-sand/40 z-20 transform rotate-3 hover:rotate-0 transition-all duration-500 group">
             <img
-              src="/photos/2J2A8072.jpg"
+              src={getPhotoUrl('2J2A8072.jpg')}
               alt="Family portrait"
               className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
             />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { RotateCcw, ArrowLeft } from 'lucide-react';
+import { getPhotoUrl } from './photosData';
 
 export default function Slide5Final({ onReplay, onPrev }) {
   return (
@@ -14,7 +15,7 @@ export default function Slide5Final({ onReplay, onPrev }) {
           {/* Portrait Container */}
           <div className="relative rounded-3xl overflow-hidden shadow-warm-lg border-2 border-warm-sand/50 bg-warm-cream/50 aspect-[3/4] transition-all duration-700">
             <img
-              src="/photos/2J2A7217.jpg"
+              src={getPhotoUrl('2J2A7217.jpg')}
               alt="Anna final portrait"
               className="w-full h-full object-cover object-top transition-transform duration-1000 group-hover:scale-105"
             />

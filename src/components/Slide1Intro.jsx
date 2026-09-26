@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { getPhotoUrl } from './photosData';
 
 export default function Slide1Intro({ onNext }) {
   return (
@@ -57,7 +58,7 @@ export default function Slide1Intro({ onNext }) {
           {/* Photograph Container */}
           <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-warm-lg border border-warm-sand/50 bg-warm-cream/40 aspect-[4/5] sm:aspect-[3/4]">
             <img
-              src="/photos/2J2A7207.jpg"
+              src={getPhotoUrl('2J2A7207.jpg')}
               alt="Anna portrait"
               className="w-full h-full object-cover object-center transition-transform duration-1000 ease-out group-hover:scale-105"
               loading="eager"
