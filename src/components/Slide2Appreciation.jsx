@@ -46,16 +46,16 @@ export default function Slide2Appreciation({ onNext, onPrev }) {
 
         {/* Heading */}
         <h2 className="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-warm-charcoal tracking-tight leading-tight">
-          Glad you were <br className="hidden sm:inline" />
+          A bond I'm <br className="hidden sm:inline" />
           <span className="italic font-cormorant font-normal text-warm-terracotta">
-            born, man.
+            grateful for.
           </span>
         </h2>
 
         {/* Exact Quote Block */}
         <div className="relative pl-6 border-l-2 border-warm-terracotta/60 space-y-3">
           <p className="font-cormorant text-xl sm:text-2xl md:text-3xl text-warm-brown leading-relaxed italic font-normal">
-            “They say you don't choose your family, but if I could choose a brother today, I’d still pick you. Glad you were born, man.”
+            “We don't always say it, but I really value the bond between us. Happy birthday.”
           </p>
         </div>
 
